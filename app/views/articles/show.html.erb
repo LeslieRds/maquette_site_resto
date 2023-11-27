@@ -1,0 +1,13 @@
+<div class="container pt-3 mt-3">
+  <div class="content-show border p-4 mt-3 shadow">
+  <h2 class="w-100 pb-2 mt-3 text-danger"><%= @article.title %></h2>
+  <br>
+  <p><%= @article.description %></p>
+    <div class="link-content w-100 text-right d-flex align-items-center justify-content-between mt-3">
+      <% if current_user == @post.user %>
+      <%= link_to icon('fas', 'feather-pointed'), edit_post_path(@post), class: "btn btn-primary" %>
+      <%= link_to icon('fas', 'trash-alt'), post_path(@post), class: "btn btn-danger", data: {turbo_method: :delete, turbo_confirm: "Etes-vous sûr?"}%>
+      <% end %>
+    </div>
+  </div>
+</div>
