@@ -1,0 +1,41 @@
+.col {
+  overflow: hidden;
+  height: 100%;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 15px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 100%;
+  max-width: 1000px;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card-product h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  padding: 10px;
+}
+
+.col button {
+  cursor: pointer;
+  max-width: 100px;
+  margin-right: 25px;
+}
