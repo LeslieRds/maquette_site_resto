@@ -5,7 +5,7 @@
     <% @articles.each do |article| %>
       <div class="col">
         <div class="card-product">
-          <h2 class="card-product-infos"><%= post.title %></h2>
+          <h2 class="card-product-infos"><%= article.title %></h2>
         </div>
         <button type="button" class="btn-gradient">
         <%= link_to "En savoir plus", article_path(article), class: "text-decoration-none text-black" %>

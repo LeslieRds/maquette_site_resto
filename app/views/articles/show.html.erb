@@ -4,10 +4,8 @@
   <br>
   <p><%= @article.description %></p>
     <div class="link-content w-100 text-right d-flex align-items-center justify-content-between mt-3">
-      <% if current_user == @post.user %>
-      <%= link_to icon('fas', 'feather-pointed'), edit_post_path(@post), class: "btn btn-primary" %>
-      <%= link_to icon('fas', 'trash-alt'), post_path(@post), class: "btn btn-danger", data: {turbo_method: :delete, turbo_confirm: "Etes-vous sûr?"}%>
-      <% end %>
+      <%= link_to icon('fas', 'feather-pointed'), edit_article_path(@article), class: "btn btn-primary" %>
+      <%= link_to icon('fas', 'trash-alt'), article_path(@article), class: "btn btn-danger", data: {turbo_method: :delete, turbo_confirm: "Etes-vous sûr?"}%>
     </div>
   </div>
 </div>

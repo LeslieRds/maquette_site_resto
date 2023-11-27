@@ -1,7 +1,7 @@
 <div class="container pt-5 mt-3">
   <h2>Ajouter un article</h2>
   <div class="form-edit mb-5">
-      <%= simple_form_for @post do |f| %>
+      <%= simple_form_for @article do |f| %>
           <%= f.input :title %>
           <%= f.input :description,as: :text, class: "w-100", :input_html => {:style => 'width: 100%', :rows => 5, class: 'response-project'} %>
           <%= f.button :submit, "Enregister l'article!", class: "btn btn-primary" %>

@@ -12,13 +12,9 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    article = Article.create(article_params)
-    redirect_to article_path(article)
-    if @article.save
-      redirect_to @article
-    else
-      render :new, status: :unprocessable_entity
-    end
+    @article = Article.new(article_params)
+    @article.save
+    redirect_to @article
   end
 
   def edit; end
